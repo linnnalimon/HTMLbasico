@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="es">
   <head>
@@ -6,7 +6,11 @@
     <!-- La forma fácil de incluir comentarios es con Ctrl + ç -->
     <title>HTML básico</title>
     <meta charset="utf-8" />
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c3fd22b8e3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Aquí va el contenido de la página -->
@@ -16,49 +20,57 @@
     <nav>
       <ul>
         <li>
-          <a href="#">La ciudad</a>
+          <a href="#ciudad">La ciudad</a>
         </li>
         <li>
-          <a href="#">Propuestas especiales</a>
+          <a href="#propuestas">Propuestas especiales</a>
         </li>
         <li>
-          <a href="#">Transportes</a>
+          <a href="#transportes">Transportes</a>
         </li>
       </ul>
     </nav>
 
-    <section>
-      <h2>La ciudad</h2>
+    <section id="ciudad">
+      <h2><i class="fa-solid fa-city"></i> La ciudad</h2>
       <!-- Contenedor con el contenido de la sección -->
       <div>
         <!-- Contenedor con los dos párrafos -->
-         <div>
-          <p>Párrafo 1</p>
+        <div>
+          <p>Párrafo 1 <i class="fa-solid fa-tree"></i> con arbolito</p>
           <p>Párrafo 2</p>
-         </div>
-         <figure>
-          <img src="img/15825342581.jpg" alt="Huerto de Calisto y Melibea">
-         </figure>
+        </div>
+        <figure>
+          <img src="img/15825342581.jpg" alt="Huerto de Calisto y Melibea" />
+        </figure>
       </div>
     </section>
 
-    <section>
-      <h2>Propuestas especiales</h2>
+    <section id="propuestas">
+      <h2><i class="fa-solid fa-map-location-dot"></i> Propuestas especiales</h2>
       <!-- Galería de imágenes -->
       <div>
         <!-- Cada imagen estará metida en un figure -->
         <figure>
-          <img src="img/planes1.jpg" alt="">
+          <img src="img/planes1.jpg" alt="" />
           <figcaption>
-            <a href="https://salamanca.es/es/propuestas-especiales/salamanca-en-2-y-3-dias/salamanca-en-2-dias" target="_blank" title="Se abre en otra ventana">
+            <a
+              href="https://salamanca.es/es/propuestas-especiales/salamanca-en-2-y-3-dias/salamanca-en-2-dias"
+              target="_blank"
+              title="Se abre en otra ventana"
+            >
               Salamanca en dos y tres días
             </a>
           </figcaption>
         </figure>
         <figure>
-          <img src="img/planes2.jpg" alt="">
+          <img src="img/planes2.jpg" alt="" />
           <figcaption>
-            <a href="https://salamanca.es/es/propuestas-especiales/itemlist/category/185-los-origenes-de-la-ciudad" target="_blank" title="Se abre en otra ventana">
+            <a
+              href="https://salamanca.es/es/propuestas-especiales/itemlist/category/185-los-origenes-de-la-ciudad"
+              target="_blank"
+              title="Se abre en otra ventana"
+            >
               Los orígenes de la ciudad
             </a>
           </figcaption>
@@ -66,18 +78,29 @@
       </div>
     </section>
 
-    <section>
-      <h2>Transportes</h2>
+    <section id="transportes">
+      <h2><i class="fa-solid fa-truck-plane"></i> Transportes</h2>
       <p>Párrafo de transportes</p>
       <div>
         <figure>
-          <img src="img/ALSA_2019_logo.svg.png" alt="Logotipo de ALSA">
+          <img src="img/ALSA_2019_logo.svg.png" alt="Logotipo de ALSA" />
         </figure>
         <figure>
-          <img src="img/logo-vector-avanza-grupo.1.png" alt="Grupo AVANZA">
+          <img src="img/logo-vector-avanza-grupo.1.png" alt="Grupo AVANZA" />
         </figure>
       </div>
     </section>
 
+    <footer>
+      <p>
+        Información extraída de
+        <a
+          href="https://salamanca.es/es/"
+          target="_blank"
+          title="Se abre en una nueva pestaña"
+          >Turismo Salamanca</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
